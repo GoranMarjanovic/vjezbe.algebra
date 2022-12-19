@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- viewport = make your website look good on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naslov naše stranice u tabu internet preglednika</title>
+    <title>Moja firma - "Naziv_moje_firme"</title>
 <!--
     <style>
         ul
@@ -37,36 +37,61 @@
 -->
 </head>
 <body>
-    <ul>
-        <li><a href=" ">Naslovna</a></li>
-        <li><a href="./stranice/omeni.html">O meni</a></li>
-        <li><a href="./stranice/media.html">Audio / video</a></li>
-        <li><a href="./stranice/prazna.html">Slobodna / prazna stranica</a></li>
-        <li><a href="./stranice/kontakt.html">Kontakt</a></li>
-        <li><a href="http://www.google.com/?hl=hr" target="_blank"> Google it </a></li>
-    </ul>
+    <header>
+        <h1>Moja firma - "Naziv_moje_firme"</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Naslovna</a></li>
+                <li><a href="./stranice/omeni.html">O meni</a></li>
+                <li><a href="./stranice/media.html">Audio / video</a></li>
+                <li><a href="./stranice/prazna.html">Slobodna / prazna stranica</a></li>
+                <li><a href="./stranice/kontakt.html">Kontakt</a></li>
+                <li><a href="http://www.google.com/?hl=hr" target="_blank"> Google it </a></li>
+                <br>
+                <li><a href="#prviodjeljak"> Skok na prvi odjeljak </a></li>
+                <li><a href="#drugiodjeljak"> Skok na drugi odjeljak </a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <br><br>
-    <h1>Moja prva web stranica</h1>
+    
+    <hr>
+
 	<h2>Naslovna stranica</h2>
 
-    <h3>Svi ostali naslovi će mi biti po h3</h3>
-    <p>Ovdje će biti <strong>prvi</strong> odlomak teksta</p>
-    Tu ide neki text
+    <section>
+      <h3 id="prviodjeljak">Prvi odjeljak</h2>
+        <p>Ovdje će biti <strong>prvi</strong> odlomak teksta</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <!-- ovdje zelim neku sliku -->
+      <img src="./media/images/beach-clouds.jpg" alt="slika u prvom odjelku" width="760" height="430">
+    </section>
     <hr>
-    <h3>Ovaj naslov mi je isto po h3</h3>
-    <p>Ovdje će biti <strong>drugi</strong> odlomak teksta</p>
-    Ovdje ću tipkati o nekim knjigama koje sam pročitao/la.
-    <pre>
-        Ovdje <em>moram</em>    <strong>jako</strong>        <i>paziti</i> 
-            jer mi je ovo    <mark>unaprijed</mark>
-        <b>preformatirani</b>    tekst
-        i ne smijem ga mijenjati.
-        Ovaj tekst mi je kao kvadratna jednadžba x<sup>2</sup>
-        I ne smijem ju shvatiti <sub>nebitnim</sub> pojmom.
-    </pre>
+    <section>
+        <h3 id="drugiodjeljak">Drugi odjeljak</h3>
+        <p>Ovdje će biti <strong>drugi</strong> odlomak teksta</p>
+        Ovdje ću pokazati preformatirani tekst i razne mogućnosti označavanja.
+        <pre>
+            Ovdje <em>moram</em>    <strong>jako</strong>        <i>paziti</i> 
+                jer mi je ovo    <mark>unaprijed</mark>
+            <b>preformatirani</b>    tekst
+            i ne smijem ga mijenjati.
+            Ovaj tekst mi je kao kvadratna jednadžba x<sup>2</sup>
+            I ne smijem ju shvatiti <sub>nebitnim</sub> pojmom.
+        </pre>
+        <!-- ovdje zelim neku sliku -->
+      <img src="./media/images/red-forest.jpg" alt="slika u drugom odjeljku" width="760" height="430">
+    </section>
     <hr>
 
-    ovdje je neki drugi tekst
+    <footer>
+        <p><small>© Copyright 2022 by Me :) </small></p>
+        
+    </footer>
 </body>
 </html>
