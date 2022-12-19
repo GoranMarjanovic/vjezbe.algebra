@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    
+<img id="mickey" width="220" height="277" src="../media/images/Mickey_Mouse.png" alt="Mickey" hidden>
+
+<p>Canvas:</p>
+
+<canvas id="mojePlatno" width="240" height="297"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+/*
+var canvas = document.getElementById("mojePlatno");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+*/
+window.onload = function() {
+    var canvas = document.getElementById("mojePlatno");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("mickey");
+
+   ctx.drawImage(img, 10, 10);
+
+   ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+
+   ctx.font = "30px Arial";
+   ctx.fillStyle = "red";
+    ctx.fillText("Moj Miki mouse",10,50);
+};
+</script>
+
+
+</body>
+</html>
